@@ -1,0 +1,27 @@
+* Ported to OS/2 by Eduard Llach, member of TeamOS/2 Spain
+
+Based on the version 0.8.8 found at sourceforge
+
+Remarks:
+  I've only added one or to IFDEF OS/2 ... no modificacions in source code,
+except on date-time functions. FileDateToDateTime( FileAge( SourceFile ) )
+in PasDoc unit seems to fail in OS/2, launching an exception, i've "removed"
+this code in OS/2 versions and all runs fine.
+
+HowTo:
+  * Compile: If you have installed unixos2, you have a "make".
+    just edit the makefile and change the PRJDIR and SRCDIR
+    Type Make.
+    You'll see a lot of warnings, don't worry about them!
+    
+  * Use: A pre-compiled version is in root tree ( PasDoc.exe ).
+    You can use it with EMX 0.9d.
+    
+  * test: You have a test which will create the documentation for PasDoc.
+    Edit "files.txt" changing the path to the files.
+    Edit "test.cmd" and change the output path and the language ( it's set
+    default to catalan -ct- )
+    run it ;)
+    
+Any comments:
+    Eduard Llach <eduard@totcontes.com>
